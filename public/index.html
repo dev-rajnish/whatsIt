@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme="*">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style-v1.css">
+  <link rel="stylesheet" href="stylek.css">
+  <link rel="manifest" href="./pwa/manifest.json">
+  <title>whatsIT</title>
+</head>
+
+<body>
+  <!--NAVBAR START-->
+  <div class="drawer my-0 py-0">
+    <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content flex flex-col">
+      <!-- Navbar -->
+      <div class="w-full navbar bg-base-300">
+        <div class="flex-none sm:block">
+          <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-ghost px-2">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              class="inline-block w-6 h-6 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 14h16M4 22h16">
+              </path>
+            </svg>
+          </label>
+        </div>
+        <div class="flex-1 pt-1 font-medium text-2xl">
+          whatsIT
+        </div>
+        <div class="flex-none  sm:block">
+          <ul class="menu menu-horizontal">
+            <!-- Navbar menu content here -->
+            <div class="dropdown mb-0">
+              <div tabindex="0" role="button" class="btn btn-ghost text-xl">
+                Theme
+                <svg width="12px" height="12px" class="h-2 w-2 fill-current opacity-60 inline-block"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
+                  <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+                </svg>
+              </div>
+              <ul tabindex="0" class="dropdown-content z-[1] shadow-2xl bg-base-300 rounded-box -ml-2 w-auto">
+                <li><input type="radio" name="theme-dropdown"
+                    class="theme-controller btn btn-md pr-14 py-1 btn-block btn-ghost justify-start"
+                    aria-label="Default" value="default" /></li>
+                <li><input type="radio" name="theme-dropdown"
+                    class="theme-controller btn btn-md pr-14 py-1 btn-block btn-ghost justify-start" aria-label="Dim"
+                    value="dim" /></li>
+                <li><input type="radio" name="theme-dropdown"
+                    class="theme-controller btn btn-md pr-14 py-1 btn-block btn-ghost justify-start" aria-label="Winter"
+                    value="winter" /></li>
+                <li><input type="radio" name="theme-dropdown"
+                    class="theme-controller btn btn-md pr-14 py-1 btn-block btn-ghost justify-start" aria-label="Night"
+                    value="night" /></li>
+                <li><input type="radio" name="theme-dropdown"
+                    class="theme-controller btn btn-md pr-14 py-1 btn-block btn-ghost justify-start" aria-label="Sunset"
+                    value="sunset" /></li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="drawer-side ">
+      <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
+      <ul class=" p-4 w-80 min-h-full bg-indigo-50">
+        <!-- Sidebar content here -->
+        <div class="mt-10">
+          <img src="./assets/dev-img.jpg" alt="developer rajnsih" class="rounded-t-lg">
+          <span>
+            <h2 class="text-center bg-blue-100 rounded-b-xl">
+              <p class="text-indigo-600 font-medium font-mono pt-2">developer _RAJNISH </p>
+              <p class="text-sm pb-2 text-black">made <mark class=" px-1 rounded-sm">whatsIt</mark> by ❤️ </p>
+            </h2>
+            <p class="text-start pl-2 pt-3 text-black text-sm">As a software developer student, I've always been
+              passionate about creating solutions that streamline everyday tasks. That drive led me to develop an
+              innovative app tailored to simplify the process of sending WhatsApp messages without the need to save the
+              recipient's number. <br>
+
+              My app, designed with user convenience in mind, efficiently handles 10-digit phone numbers provided by the
+              user. By eliminating the necessity to save contacts beforehand, it significantly enhances messaging
+              efficiency. <br>
+
+              Users can seamlessly initiate conversations without cluttering their contact lists, making it ideal for
+              quick interactions or one-time communications. Whether it's coordinating plans with acquaintances,
+              reaching out to new contacts, or engaging in professional exchanges, the app offers a hassle-free
+              solution. <br>
+
+              With a focus on user experience, the app ensures a seamless interface and intuitive navigation. It
+              prioritizes simplicity without compromising functionality, enabling users to effortlessly compose and send
+              messages with minimal effort. <br>
+
+              By empowering users to communicate swiftly and effortlessly, my app exemplifies my commitment to
+              leveraging technology to enhance everyday experiences. As I continue to evolve as a software developer, I
+              remain dedicated to creating solutions that simplify tasks and enrich lives.</p>
+          </span>
+        </div>
+      </ul>
+    </div>
+  </div>
+  <!--navbar END/-->
+
+  <!--Main Body START-->
+  <div class="flex justify-center items-center mt-64 min-h-max">
+    <div class="join">
+      <div>
+        <button class="btn join-item pl-2 pr-2 ">
+          <span class=" text-xl px-0 mx-0">
+            +
+          </span>
+          <span class=" text-xl pl-0 -ml-2">
+            91
+          </span>
+        </button>
+      </div>
+      <div>
+        <div>
+          <input type="search" placeholder="10 Digit phoneNumber" id="phoneNumber" data-theme="light"
+            class="appearance-none text-xl input input-bordered join-item focus:outline-none focus:border-grey-400 focus:font-normal "
+            style="letter-spacing: 0.1em ;" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex justify-center items-center mt-3">
+
+    <button onclick="openWhatsAppChat()" class="btn btn-success text-white w-max mt-3 text-2xl font-normal"
+      type="submit">
+      Whatsapp
+    </button>
+    <button id="installBtn" style="display: block;" class="btn btn-outline w-max mt-3 ml-2 btn-error text-xl ">install
+      App</button>
+  </div>
+  <!--Main Body END /-->
+
+  <!--Script-->
+  <script src="./pwa/sw.js" fetchpriority="high"></script>
+  <script src="./pwa/pwa.js" async></script>
+  <script src="./main.js" async></script>
+
+
+</body>
+
+</html>

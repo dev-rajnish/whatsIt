@@ -1,0 +1,37 @@
+{
+    "name": "whatsIT",
+    "short_name": "whatsIT",
+    "start_url": "../",
+    "display": "standalone",
+    "display_mode" : "browser",
+    "background_color": "#beedc2",
+    "description": "WhatsApp Without Saving Phone Number",
+    "icons": [
+        {
+            "src": "icons/i192.svg",
+            "sizes": "192x192",
+            "type": "image/svg+xml",
+            "purpose": "any"
+          },
+          {
+            "src": "icons/i192.svg",
+            "sizes": "192x192",
+            "type": "image/svg+xml",
+            "purpose": "maskable"
+          },
+          {
+            "src": "icons/i512.svg",
+            "sizes": "512x512",
+            "type": "image/svg+xml",
+            "purpose": "any"
+          },
+          {
+            "src": "icons/i512.svg",
+            "sizes": "512x512",
+            "type": "image/svg+xml",
+            "purpose": "maskable"
+          }
+    ]
+
+  }
+  
